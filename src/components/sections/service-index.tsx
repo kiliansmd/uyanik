@@ -1,0 +1,3 @@
+import Link from 'next/link';import { servicePages } from '@/content/services';
+const aesthetic = { slug: '../aesthetik/faltenbehandlung', title: 'Ästhetische Faltenbehandlung', eyebrow: 'Ärztliche Beratung', summary: 'Zurückhaltende Beratung zu ästhetischen Möglichkeiten, Grenzen und Risiken ohne Ergebnisversprechen.' };
+export function ServiceIndex(){const items=[...servicePages,aesthetic];return <div className="service-index">{items.map((service,index)=><Link href={service.slug.startsWith('../')?'/aesthetik/faltenbehandlung':`/leistungen/${service.slug}`} key={service.slug} className="service-row"><span>{String(index+1).padStart(2,'0')}</span><div><p>{service.eyebrow}</p><h3>{service.title}</h3><small>{service.summary}</small></div></Link>)}</div>}

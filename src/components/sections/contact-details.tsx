@@ -1,0 +1,2 @@
+import { ButtonLink } from '@/components/ui/button-link';import { siteConfig } from '@/config/site';
+export function ContactDetails(){return <div className="contact-details"><address>{siteConfig.physicianName}<br />{siteConfig.street}<br />{siteConfig.postalCode} {siteConfig.city}<br /><a href={siteConfig.phoneHref}>{siteConfig.phone}</a><br /><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></address><ButtonLink href={siteConfig.mapsUrl} variant="secondary">Route planen</ButtonLink></div>}
