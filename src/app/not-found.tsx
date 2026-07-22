@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <section className="section"><div className="container"><h1 className="font-serif text-4xl font-semibold">Seite nicht gefunden</h1><p className="mt-4 text-[var(--color-muted)]">Die angeforderte Seite existiert nicht oder wurde verschoben.</p><Link className="mt-6 inline-flex underline" href="/">Zur Startseite</Link></div></section>}

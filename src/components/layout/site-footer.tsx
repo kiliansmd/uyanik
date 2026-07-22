@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { siteConfig } from '@/config/site';
+export function SiteFooter(){return <footer className="border-t border-[var(--color-line)] py-10"><div className="container grid gap-6 md:grid-cols-3"><div><strong>{siteConfig.practiceName}</strong><p>{siteConfig.specialty}</p></div><address className="not-italic">{siteConfig.street}<br />{siteConfig.postalCode} {siteConfig.city}<br /><a href={siteConfig.phoneHref}>{siteConfig.phone}</a><br /><a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a></address><div className="flex gap-4"><Link href="/impressum">Impressum</Link><Link href="/datenschutz">Datenschutz</Link></div></div></footer>}

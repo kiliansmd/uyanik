@@ -1,0 +1,2 @@
+import { PageHero } from '@/components/sections/page-hero';import { practiceFeatures } from '@/content/practice';
+export default function PrivatePracticePage(){return <><PageHero title="Privatpraxis" eyebrow="Mit Zeit"><p>Die Website richtet sich an Privatversicherte und Selbstzahlende. Abrechnungshinweise werden vor dem Launch final geprüft.</p></PageHero><section className="section"><div className="container grid gap-4 md:grid-cols-3">{practiceFeatures.map((feature)=><div className="card p-5" key={feature}>{feature}</div>)}</div></section></>}

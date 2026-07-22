@@ -1,0 +1,3 @@
+import { notFound } from 'next/navigation';import { PageHero } from '@/components/sections/page-hero';import { servicePages } from '@/content/services';
+const service = servicePages.find((item) => item.slug === 'schnarchen-schlafdiagnostik');
+export default function ServiceDetailPage(){if(!service){notFound()}return <><PageHero title={service.title} eyebrow={service.eyebrow}><p>{service.summary}</p></PageHero><section className="section"><div className="container"><h2 className="text-2xl font-semibold">Was Sie erwartet</h2><ul className="mt-6 grid gap-4 md:grid-cols-3">{service.sections.map((item)=><li className="card p-5" key={item}>{item}</li>)}</ul></div></section></>}
