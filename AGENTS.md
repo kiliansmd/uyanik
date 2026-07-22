@@ -2,7 +2,7 @@
 
 - Projektziel: hochwertige responsive Website für die Privatpraxis Uyanik; Markenkern: „Präzise HNO-Medizin. Persönlich und mit Zeit.“
 - Zentrale Verzeichnisse: `src/app` für Routen, `src/components` für UI, `src/config/site.ts` für Praxisdaten, `src/content` für Inhalte, `docs` für Produkt- und Launch-Dokumentation.
-- Befehle: `npm run dev`, `npm run lint`, `npm run typecheck`, `npm run check:legal`, `npm run build`.
+- Befehle: `npm run dev`, `npm run lint`, `npm run typecheck`, `npm run test`, `npm run build`, `npm run check:legal`, `npm run verify:content`.
 - TypeScript bleibt im Strict Mode; Benutzeroberfläche deutsch, Codebezeichner englisch.
 - Keine erfundenen medizinischen Aussagen, Qualifikationen, Bewertungen, Auszeichnungen, Teammitglieder oder Rechtstexte.
 - Keine Remote-Stockfoto-URLs, keine SaaS-/KI-Designmuster, keine unnötigen Abhängigkeiten.
