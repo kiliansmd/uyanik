@@ -1,2 +1,4 @@
-import { PageHero } from '@/components/sections/page-hero';
-export default function CareerPage(){return <PageHero title="Kassenpraxis & Karriere" eyebrow="Information"><p>Diese Route ist vorbereitet. Konkrete Angaben zur Kassenpraxis oder zu offenen Stellen werden erst nach Bestätigung veröffentlicht.</p></PageHero>}
+import type { Metadata } from 'next';
+import { Container } from '@/components/layout/container';import { Section } from '@/components/layout/section';import { PageHero } from '@/components/sections/page-hero';import { seoPages } from '@/content/site-pages';import { createPageMetadata } from '@/lib/metadata';
+export const metadata: Metadata = createPageMetadata(seoPages.career);
+export default function CareerPage(){return <><PageHero title="Kassenpraxis und Karriere" eyebrow="Organisation"><p>Dieser Bereich bündelt organisatorische Hinweise und kann künftig Stellenangebote aufnehmen. Aktuell werden keine konkreten Stellen oder zusätzlichen Standorte veröffentlicht.</p></PageHero><Section><Container><div className="promise-grid"><article><h3>Organisatorische Hinweise</h3><p>Informationen können hier später strukturiert ergänzt werden.</p></article><article><h3>Künftige Ausschreibungen</h3><p>Die Datenstruktur ist vorbereitet, ohne Stellen zu erfinden.</p></article></div></Container></Section></>}

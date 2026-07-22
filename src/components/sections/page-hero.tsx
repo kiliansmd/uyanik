@@ -1,2 +1,6 @@
-type PageHeroProps = { eyebrow?: string; title: string; children: React.ReactNode };
-export function PageHero({ eyebrow, title, children }: PageHeroProps){return <section className="section"><div className="container max-w-4xl">{eyebrow ? <p className="mb-3 text-sm font-semibold uppercase tracking-[.18em] text-[var(--color-accent-dark)]">{eyebrow}</p> : null}<h1 className="font-serif text-4xl font-semibold md:text-5xl">{title}</h1><div className="mt-6 text-lg leading-8 text-[var(--color-muted)]">{children}</div></div></section>}
+import type { ReactNode } from 'react';
+import { Breadcrumbs } from '@/components/navigation/breadcrumbs';
+import { Container } from '@/components/layout/container';
+
+type PageHeroProps = { eyebrow?: string; title: string; children: ReactNode; breadcrumbs?: Array<{ label: string; href?: string }> };
+export function PageHero({ eyebrow, title, children, breadcrumbs }: PageHeroProps){return <section className="page-hero"><Container>{breadcrumbs ? <Breadcrumbs items={breadcrumbs}/> : null}<div className="page-hero__content">{eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}<h1>{title}</h1><div className="lede">{children}</div></div></Container></section>}

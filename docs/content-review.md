@@ -6,7 +6,7 @@ Noch zu bestätigen:
 - Eröffnungstermin der neuen Räume
 - Öffnungszeiten
 - Doctolib-URL
-- Idana-Prozess
+- Idana-Prozess und ob digitale Vorbereitung aktiv kommuniziert werden darf
 - Vollständige Qualifikationen
 - Teamnamen und Rollen
 - Konkrete diagnostische Geräte
@@ -14,4 +14,6 @@ Noch zu bestätigen:
 - Konkrete ästhetische Behandlungen
 - Rechtstexte
 - Bildfreigaben
-- Medizinische Freigabe aller Fachtexte
+- Parken, ÖPNV und Barrierefreiheit am Standort
+- Medizinische und rechtliche Prüfung der GOÄ- und Selbstzahlerformulierungen
+- Medizinische Freigabe aller Fachtexte, insbesondere Schwindel/Tinnitus, Schnarchen/Schlaf, Nase/Nasenchirurgie, Kinder-HNO, operative HNO, Akupunktur, Tauchmedizin und ästhetische Faltenbehandlung

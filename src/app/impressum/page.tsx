@@ -1,3 +1,5 @@
-import { PageHero } from '@/components/sections/page-hero';
+import type { Metadata } from 'next';
+import { PageHero } from '@/components/sections/page-hero';import { legalContent } from '@/content/legal';import { seoPages } from '@/content/site-pages';import { createPageMetadata } from '@/lib/metadata';
 const LEGAL_PLACEHOLDER = true;
-export default function ImprintPage(){return <PageHero title="Impressum" eyebrow="Rechtliche Angaben"><p>{LEGAL_PLACEHOLDER ? 'Rechtliche Pflichtangaben werden vor Produktionsfreigabe durch die Praxis oder Rechtsberatung ergänzt und geprüft.' : null}</p></PageHero>}
+export const metadata: Metadata = createPageMetadata(seoPages.imprint);
+export default function ImprintPage(){return <PageHero title={legalContent.imprint.heading} eyebrow="Rechtliche Angaben"><p>{LEGAL_PLACEHOLDER ? legalContent.imprint.text : null}</p></PageHero>}
