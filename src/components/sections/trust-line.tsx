@@ -1,0 +1,1 @@
+export function TrustLine(){return <div className="trust-line"><span>Privatversicherte & Selbstzahlende</span><span>Persönliche Beratung</span><span>Keine medizinischen Freitextformulare</span></div>}
